@@ -1,0 +1,100 @@
+.owl-carousel{}
+
+.item{
+    position: relative;
+}
+
+.owl-carousel .item::after {
+	content: "";
+	position: absolute;
+	top: 90%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.4s;
+}
+.owl-carousel:hover .item::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #3836367a;
+	width: 100%;
+	height: 100%;
+}
+.item img{}
+
+.item a{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-size: 18px;
+    border: 1px solid transparent;
+    z-index: 1;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    transition: all 0.4s;
+}
+.item a:hover{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    z-index: 1;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.counter-days {
+  	color: blue;
+}
+
+.counter-hours {
+ 	color: red;
+}
+
+.counter-minutes {
+ 	color: green;
+}
+
+.counter-seconds {
+ 	color: #7A7F83;
+}
+
+.myCountdown div{ 
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+    margin: 0px 100px;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+
+.myCountdown div:nth-child(1){
+	border-bottom: 2px solid blue;
+}
+
+.myCountdown div:nth-child(2){
+	border-bottom: 2px solid red;
+}
+.myCountdown div:nth-child(3){
+	border-bottom: 2px solid green;
+}
+
+.myCountdown div:nth-child(4){
+	border-bottom: 2px solid #7A7F83;
+}
+
+.banner{
+	background: #202427ba url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    background-blend-mode: darken;
+}
